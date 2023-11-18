@@ -1,5 +1,5 @@
 # SpoToken
-This solidity program is a simple exercise aimed at creating a basic token  known as 'Spo-Token'. The purpose is to demonstrate how to create a coin in its basic form. This is a required project to complete the course ETH PROOF: Beginner EVM Course at [@metacraftersio](https://twitter.com/nengakgoltong)
+This solidity program is a simple exercise aimed at creating a basic token  known as 'Spo-Token'. The purpose is to demonstrate how to create a coin in its basic form. This is a required project to complete the course ETH PROOF: Beginner EVM Course at [@metacraftersio](https://twitter.com/metacraftersio)
 
 ## Description
 This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain.

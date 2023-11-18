@@ -56,19 +56,21 @@ function withdraw(address _account, uint _number) public payable {
     }
 ```
 
-The 'repayLoan' function allows the user to repay loan that was previously disbursed provided that the user address holds at least the amount to be repayed. The function uses the 'require' method of error handling to verify this condition. Where the condition holds true, the Cooperative address is increased by the repayed amount, the user address is decreased by the repayed amount and the user debt is decreased by the same amount.
+The 'repayLoan' function allows the user to repay loan that was previously disbursed provided that the user address holds at least the amount to be repayed. The function uses the 'revert' method of error handling to verify this condition. Where the condition holds true, the Cooperative address is increased by the repayed amount, the user address is decreased by the repayed amount and the user debt is decreased by the same amount.
 
 If the condition does not hold true, the transaction fails and the reason for failed transaction is displayed as "You do not have sufficient funds for this transaction".
 ```
 function repayLoan(address _account, uint _number) public payable {
-        require(balances[_account] >= _number, "You do not have sufficient funds for this transaction");
+        if(balances[_account] >= _number){
+            revert("You do not have sufficient funds for this transaction");
+        }
         balances[_account] -= _number;
         debts[_account] -= _number;
         balances[coopAccount] += _number;
     }
 ```
 
-The 'getBalances' function accepts address as argument and checks the balance of that address
+The 'getBalance' function accepts address as argument and checks the balance of that address
 ```
 function getBalance(address _address) public view returns(uint) {
         return balances[_address];
@@ -126,7 +128,9 @@ contract LoanSystem {
     }
 
     function repayLoan(address _account, uint _number) public payable {
-        require(balances[_account] >= _number, "You do not have sufficient funds for this transaction");
+        if(balances[_account] >= _number){
+            revert("You do not have sufficient funds for this transaction");
+        }
         balances[_account] -= _number;
         debts[_account] -= _number;
         balances[coopAccount] += _number;
@@ -142,7 +146,7 @@ contract LoanSystem {
 }
 ```
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler option is set to "0.8.4", and then click on the "Compile SpoToken.sol" button.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler option is set to "0.8.7", and then click on the "Compile SpoToken.sol" button.
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "LoanSystem" contract from the dropdown menu, and then click on the "Deploy" button.
 

@@ -10,13 +10,13 @@ contract LoanSystem {
     mapping(address => uint) private debts;
     address public coopAccount;
 
-    
     function setCoopAccount(address _coopAccount) public {
         coopAccount = _coopAccount;
     }
 
     function deposit(address _account, uint _number) public payable {
         balances[_account] += _number;
+        
     }
 
     function requestLoan(address _account, uint _number) public payable {
@@ -35,7 +35,9 @@ contract LoanSystem {
     }
 
     function repayLoan(address _account, uint _number) public payable {
-        require(balances[_account] >= _number, "You do not have sufficient funds for this transaction");
+        if(balances[_account] >= _number){
+            revert("You do not have sufficient funds for this transaction");
+        }
         balances[_account] -= _number;
         debts[_account] -= _number;
         balances[coopAccount] += _number;
