@@ -128,7 +128,7 @@ contract LoanSystem {
     }
 
     function repayLoan(address _account, uint _number) public payable {
-        if(balances[_account] >= _number){
+        if(balances[_account] < _number){
             revert("You do not have sufficient funds for this transaction");
         }
         balances[_account] -= _number;
