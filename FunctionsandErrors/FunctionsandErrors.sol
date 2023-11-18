@@ -30,7 +30,7 @@ contract LoanSystem {
     }
 
     function withdraw(address _account, uint _number) public payable {
-        assert(balances[_account] > 0);
+        assert(balances[_account] >= _number);
         balances[_account] -= _number;
     }
 
