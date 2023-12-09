@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/spomaria/Documents/Spomary-Files/Soft-Devt-Files/Metacrafters/DegenToken/contracts/DegenToken.sol": {
-      "lastModificationDate": 1701803776071,
-      "contentHash": "e8217638544e3696845803f92a6ca547",
+      "lastModificationDate": 1702146567509,
+      "contentHash": "1232e1957ef6b2c4a1369b36f5644067",
       "sourceName": "contracts/DegenToken.sol",
       "solcConfig": {
         "version": "0.8.20",

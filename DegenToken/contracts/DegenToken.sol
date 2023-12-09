@@ -53,11 +53,9 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         }else {
             value = 30;
         }
-        address owner = _msgSender();
-        uint256 senderBalance = _balances[owner];
-        require(senderBalance >= value, "You do not have enough Degen Tokens");
+        address store = 0x70997970C51812dc3A010C7d01b50e0d17dc79C8;
+        require(balanceOf(msg.sender) >= value, "You do not have enough Degen Tokens");
         approve(msg.sender, value);
-        senderBalance -= value;
-        _balances[owner] = senderBalance;
+        transferFrom(msg.sender, store, value);
     }
 }
