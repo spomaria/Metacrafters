@@ -9,8 +9,6 @@ import "../node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Burn
 contract DegenToken is ERC20, Ownable, ERC20Burnable {
 
     constructor() ERC20("Degen", "DGN") {}
-
-    mapping (address => uint) public _balances;
     
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
