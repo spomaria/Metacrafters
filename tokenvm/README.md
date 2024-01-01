@@ -96,9 +96,9 @@ Follow the prompts accordingly by typing in the name of the coin and type 'y' to
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-metadata (can be changed later): MarioCoin
+metadata (can be changed later): GolCoin
 continue (y/n): y
-✅ txID: 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+✅ txID: 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
 ```
 
 _`txID` is the `assetID` of your new asset._
@@ -119,12 +119,12 @@ just to mint to yourself).
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-assetID: 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 0
+assetID: 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
+metadata: GolCoin supply: 0
 recipient: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 amount: 10000
 continue (y/n): y
-✅ txID: X1E5CVFgFFgniFyWcj5wweGg66TyzjK2bMWWTzFwJcwFYkF72
+✅ txID: 2Rk89PyQg9JNVRAnJwgiHrQgNEUqdJQY5k1WZ5LpwNu6rRac99
 ```
 
 #### Step 3: View Your Balance
@@ -139,9 +139,9 @@ Follow the prompts and input the 'assetID' of the asset whose balance you intend
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 10000 warp: false
-balance: 10000 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+assetID (use TKN for native token): 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
+metadata: GolCoin supply: 10000 warp: false
+balance: 10000 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
 ```
 
 #### Step 4: Create an Order
@@ -157,15 +157,15 @@ When you are done, the output should look something like this:
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-in assetID (use TKN for native token): TKN
-✔ in tick: 1█
-out assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 10000 warp: false
-balance: 10000 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-out tick: 10
-supply (must be multiple of out tick): 100
+in assetID (use TKN for native token): 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
+✔ in tick: 10█
+out assetID (use TKN for native token): TKN
+metadata: GolCoin supply: 10000 warp: false
+balance: 10000 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
+out tick: 5
+supply (must be multiple of out tick): 20
 continue (y/n): y
-✅ txID: 2TdeT2ZsQtJhbWJuhLZ3eexuCY4UP6W7q5ZiAHMYtVfSSp1ids
+✅ txID: ZzT6ZyF1bxF3qHJYTrzBsHMdeJHokpDTfUYXQHQVPMTUQdRU1
 ```
 
 _`txID` is the `orderID` of your new order._
@@ -186,18 +186,17 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-in assetID (use TKN for native token): TKN
-balance: 997.999993843 TKN
-out assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+chainID: 2ng5Edf5w5hJForxyjPcTA5bAgbwvjV4esMDeGfhETUFgQb8BA
+in assetID (use TKN for native token): 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
 metadata: GolCoin supply: 10000 warp: false
+balance: 10000 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn
+out assetID (use TKN for native token): TKN
 available orders: 1
-0) Rate(in/out): 100000000.0000 InTick: 1.000000000 TKN OutTick: 10 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug Remaining: 100 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-select order: 0
-value (must be multiple of in tick): 2
-in: 2.000000000 TKN out: 20 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+0) Rate(in/out): 0.0000 InTick: 10 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn OutTick: 5.000000000 TKN Remaining: 20.000000000 TKN
+value (must be multiple of in tick): 10
+in: 10 2DEph7uUuAUFyLqeV3MsTddMzQ46cN5qVg1DaD2s74z4anP8pn out: 5.000000000 TKN
 continue (y/n): y
-✅ txID: uw9YrZcs4QQTEBSR3guVnzQTFyKKm5QFGVTvuGyntSTrx3aGm
+✅ txID: 2Y4yn73ZekDNEPGsT5iq85563QUENKJwA7FJ2Vd5gr99XonjA8
 ```
 
 Note how all available orders for this pair are listed by the CLI (these come
