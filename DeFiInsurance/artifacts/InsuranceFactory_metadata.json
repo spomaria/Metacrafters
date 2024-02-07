@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "claimCompensation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_insurerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"name": "createInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "getSomeTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_insuranceType",
+						"type": "string"
+					}
+				],
+				"name": "getSubscription",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DeFiInsurance/InsuranceFactory.sol": "InsuranceFactory"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DeFiInsurance/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"DeFiInsurance/ERC20.sol": {
+			"keccak256": "0xc4594623661efc1c6eeb8381c4d385a2765b247fcc021558b09dfdef5e7a957c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://18dc1a2d5f73856d5dc179fca5620f76c49469c183c25d0130c8f66e68dba332",
+				"dweb:/ipfs/QmeqTTnsJDo7kkjP3tXKZeMZKuPuyWcPVD4UQscE9BycxE"
+			]
+		},
+		"DeFiInsurance/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"DeFiInsurance/IERC20Metadata.sol": {
+			"keccak256": "0xc9728de78b2dc3785bc6cc070e1ed8a2a855459b99f6bc1b8d17b4d2821fe36e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2977d4a4bfcd16800b9442abd22134592100c156d5a5f2b6d1cd3d62818ab7b",
+				"dweb:/ipfs/QmcKhKHMKriycRzyFKaQMAqFun33547tykyn2A1tA1KBBW"
+			]
+		},
+		"DeFiInsurance/Insurance.sol": {
+			"keccak256": "0x82e85cdb2438d2a2e3e36dc7822768fe47bbd16d1ffea35eac03c2d88cae28a1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06890b3fe7fc59748ff12f4b6277c135f8cf3e86e59c9d8d6286da60936201bc",
+				"dweb:/ipfs/QmZgjZQWDhEx2aTjEm9DebkK9fwxv3oneB1dKUqCiVyNRW"
+			]
+		},
+		"DeFiInsurance/InsuranceFactory.sol": {
+			"keccak256": "0x62100bbb5139d4ee91201f3b5ec0a8c84e2d2ab3c95dd615dbc3ecc10b5891eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://57e2d4bd7de901c7a69044376d6eadf0e161648037c1256d613dfc3bc2b29351",
+				"dweb:/ipfs/QmaAr7LHxkk2ZvQZ5x2iUiZFASmw5DJDFipsrKboAZbfWe"
+			]
+		}
+	},
+	"version": 1
+}
